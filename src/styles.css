@@ -32,12 +32,19 @@ body {
   color: var(--gold);
 }
 
+.logo_title {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
 .subtitle {
   text-align: center;
   font-size: 32px;
 }
 
-.dot_moving {
+/* .dot_moving {
   display: inline-block;
   margin: 0 2px;
   animation: bounce 1s infinite;
@@ -51,5 +58,63 @@ body {
   }
   40% {
     transform: translateY(-10px);
+  }
+} */
+
+@media (max-width: 1080px) {
+  body {
+    font-size: 18px;
+  }
+  .logo_title {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .logo_title {
+    width: 95vw;
+  }
+  .title_box h1 {
+    font-size: 74px;
+    text-align: center;
+  }
+
+  .jags_title {
+    font-family: "Title1", sans-serif;
+    font-size: 178px;
+    color: var(--gold);
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .logo_title {
+    width: 95vw;
+  }
+
+  .title_box h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .jags_title {
+    font-family: "Title1", sans-serif;
+    font-size: 76px;
+    color: var(--gold);
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 16px;
   }
 }
