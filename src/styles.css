@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Title1"; /* Name your font family */
+  src: url("src\assets\fonts\Matita.ttf"); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: "Title2"; /* Name your font family */
+  src: url("src\assets\fonts\KronaOne-Regular.ttf"); /* Locate the .ttf file within your directory*/
+}
+:root {
+  /* Colors:*/
+  --gold: #d7a22a;
+  --darkg: #9f792c;
+  --black: #101820;
+  --teal: #006778;
+}
+
+body {
+  font-family: "Title2", sans-serif;
+  font-size: 24px;
+  color: var(--black);
+}
+
+.title_box h1 {
+  font-size: 85px;
+  text-align: center;
+}
+
+.jags_title {
+  font-family: "Title1", sans-serif;
+  font-size: 200px;
+  color: var(--gold);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+.dot_moving {
+  display: inline-block;
+  margin: 0 2px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+}
