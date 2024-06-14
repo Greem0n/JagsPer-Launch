@@ -32,6 +32,13 @@ body {
   color: var(--gold);
 }
 
+.logo_title {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
 .subtitle {
   text-align: center;
   font-size: 32px;
@@ -54,9 +61,21 @@ body {
   }
 } */
 
+@media (max-width: 1080px) {
+  body {
+    font-size: 18px;
+  }
+  .logo_title {
+    width: 95vw;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+  }
+  .logo_title {
+    width: 95vw;
   }
   .title_box h1 {
     font-size: 74px;
@@ -78,6 +97,9 @@ body {
 @media (max-width: 480px) {
   body {
     font-size: 12px;
+  }
+  .logo_title {
+    width: 95vw;
   }
 
   .title_box h1 {
