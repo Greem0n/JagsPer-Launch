@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: "Title1"; /* Name your font family */
+  font-family: "matita"; /* Name your font family */
   src: url("src\assets\fonts\Matita.ttf"); /* Locate the .ttf file within your directory*/
 }
 @font-face {
-  font-family: "Title2"; /* Name your font family */
+  font-family: "krona"; /* Name your font family */
   src: url("src\assets\fonts\KronaOne-Regular.ttf"); /* Locate the .ttf file within your directory*/
+}
+@font-face {
+  font-family: "cambria"; /* Name your font family */
+  src: url("src\assets\fonts\cambria.ttf"); /* Locate the .ttf file within your directory*/
 }
 :root {
   /* Colors:*/
@@ -16,8 +20,8 @@
 }
 
 body {
-  font-family: "Title2", sans-serif;
-  font-size: 24px;
+  font-family: "cambria", "krona", sans-serif;
+  font-size: 18px;
   color: var(--black);
 }
 
@@ -27,7 +31,7 @@ body {
 }
 
 .jags_title {
-  font-family: "Title1", sans-serif;
+  font-family: "matita", sans-serif;
   font-size: 200px;
   color: var(--gold);
 }
@@ -44,6 +48,29 @@ body {
   font-size: 32px;
 }
 
+.matita {
+  font-family: "matita", sans-serif;
+}
+
+.krona {
+  font-family: "krona", sans-serif;
+}
+
+.cambria {
+  font-family: "cambria", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowecase {
+  text-transform: lowercase;
+}
+
+.hidden {
+  display: none;
+}
 /* .dot_moving {
   display: inline-block;
   margin: 0 2px;
