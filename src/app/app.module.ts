@@ -6,10 +6,28 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
+import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    FooterComponent,
+    LanguageSelectorComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent, NavigationComponent, FooterComponent],
+  bootstrap: [
+    AppComponent,
+    NavigationComponent,
+    FooterComponent,
+    LanguageSelectorComponent,
+  ],
 })
 export class AppModule {}

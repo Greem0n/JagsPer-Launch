@@ -1,0 +1,10 @@
+<div>
+  <ng-container *ngFor="let language of languagesList; index as i">
+    <button
+      *ngIf="activeLanguage != language.code"
+      (click)="changeLanguage(language.code)"
+    >
+      <img class="flag-icon" [src]="language.imgUrl" [alt]="language.name" />
+    </button>
+  </ng-container>
+</div>
