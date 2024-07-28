@@ -1,4 +1,47 @@
 .flag-icon {
-  width: 31px;
+  width: 32px;
   height: 32px;
+}
+
+.language_modal {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: 30px repeat(2, minmax(100px, 1fr));
+  width: 25em;
+  height: 12em;
+  color: var(--black);
+  background: var(--white);
+  padding: 0.5em 1.5em;
+  border: 4px solid var(--black);
+  border-bottom: 8px solid var(--black);
+  border-radius: var(--button_radius);
+}
+
+.language_modal .lang_title {
+  grid-column: span 4;
+  justify-self: center;
+  align-self: center;
+}
+
+.language_modal .close {
+  grid-column: span 4;
+  justify-self: end;
+}
+
+.language_modal button.btn_first {
+  grid-column: span 2;
+  margin: 0 0.5em;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+}
+
+.lang_layer {
+  grid-template-columns: repeat(2, minmax(40px, 88px));
+  justify-items: center;
+  align-items: center;
+}
+.lang_layer .flag-icon {
+  border: 1px solid var(--black);
+  border-radius: 50%;
 }
